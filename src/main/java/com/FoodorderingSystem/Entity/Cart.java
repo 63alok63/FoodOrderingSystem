@@ -11,8 +11,25 @@ public class Cart {
     @Id
 	int billid;
     public int bill;
+    String image;
     
-    @OneToOne
+    public String getImage() {
+		return image;
+	}
+
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+
+	public Cart(String image) {
+		super();
+		this.image = image;
+	}
+
+
+	@OneToOne
     Item item;
     
     

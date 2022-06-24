@@ -13,6 +13,7 @@ public class Customer {
 	String name;
 	String address;
 	long mobile;
+	
 	public String getName() {
 		return name;
 	}

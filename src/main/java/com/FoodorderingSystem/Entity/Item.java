@@ -12,8 +12,24 @@ public class Item {
 	int iid;
 	String iname;
 	String iprice;
+	String image;
 	
-	
+	public String getImage() {
+ 		return image;
+	}
+
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+
+	public Item(String image) {
+		super();
+		this.image = image;
+	}
+
+
 	@OneToOne
 	Category category;
 
@@ -74,18 +90,9 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [iid=" + iid + ", iname=" + iname + ", iprice=" + iprice + ", category=" + category + "]";
+		return "Item [image=" + image + "]";
 	}
 
-
-	
-
-
-	
-	
-
-
-	
-	}
+}
 
 
